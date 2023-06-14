@@ -1,0 +1,27 @@
+.container {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+ }
+ 
+ .flower {
+   width: 100px;
+   height: 100px;
+   background-image: url('path/to/flower.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 0;
+   right: 0;
+   animation: flower-fly 5s linear infinite;
+ }
+ 
+ @keyframes flower-fly {
+   0% {
+     transform: translateX(100%);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
